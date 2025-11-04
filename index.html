@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<!-- saved from url=(0063)file:///C:/Users/sammy/Downloads/Sam_Habib-Portfolio/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="favicon2.png">  
+  <link rel="icon" type="image/png" href="images/favicon2.png">  
   <title>Sam Habib | Mechanical Engineer</title>
- 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- ---------- NAVBAR ---------- -->
   <header>
     <nav>
-      <div><strong>Sam Habib</strong></div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/favicon2.png" alt="Sam Habib Logo">
+        </a>
+      </div>
       <ul>
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#projects">Projects</a></li>
@@ -23,68 +28,107 @@
     </nav>
   </header>
 
+
+  <section class="top-section">
+    <div class="top">
+      <div class="split-text-container">
+        <span class="text-part left">SAM&nbsp;</span>
+        <span class="text-part right">HABIB</span>
+        <div class="description-list">
+          <span class="desc-item">Engineer</span>
+          <span class="desc-item">Innovator</span>
+          <span class="desc-item">Creator</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- scroll indicator ---------- -->
+<section id="scroll-indicator">
+  <a href="#hero">
+    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <polyline points="6 9 12 15 18 9" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</section>
+
   <!-- ---------- HERO SECTION ---------- -->
-  <section id="hero">
-    <img src="composite.jpg" alt="Headshot Placeholder">
+  <section id="hero" class="fade-section fade-up">
+    <img src="images/composite.jpg" alt="Headshot Placeholder">
     <h1>Sam Habib</h1>
     <h3>Mechanical Engineer at University of Colorado</h3>
     <p>Engineering student passionate about hands-on design, problem solving, and creating solutions that make a real impact.</p>
-    <a class="btn" href="Sam_Habib-Current_Professional_Resume.pdf" target="_blank">View Resume</a>
+    <a class="btn" href="images/Sam_Habib-Current_Professional_Resume.pdf" target="_blank">View Resume</a>
     <a class="btn" href="https://www.linkedin.com/in/samuel-habib2792/" target="_blank">LinkedIn</a>
   </section>
 
+  
+
   <!-- ---------- ABOUT SECTION ---------- -->
-  <section id="about">
+  <section id="about" class="fade-section fade-up">
     <h2>About Me</h2>
     <p>I’m a mechanical engineering student at the University of Colorado with a passion for practical problem-solving and design. I enjoy taking concepts from idea to prototype, whether that’s in the shop, in simulation, or through collaborative team projects.</p>
     <p>Outside of class, I’m always looking for opportunities to expand my skills, from CAD modeling and prototyping to data analysis. I’m especially drawn to projects that merge mechanical design with real-world impact.</p>
     <p>In my free time, I enjoy golfing, building things, and exploring how engineering shapes everyday life.</p>
   </section>
 
-  <!--<div class="work-title">
-    <h2 class="big-text">
-      W<span class="other-font big">O</span><span class="move-left">RK</span>
-    </h2>
-  </div>-->
-
-
-
-  
+  <br>
 
   <!-- ---------- PROJECTS SECTION ---------- -->
-  <section id="projects">
+  <section id="projects" class="fade-section fade-up">
     <h2>Projects</h2>
-    <div class="project-grid">
+    <div id="project1" class="fade-section fade-left">
       <a href="project1.html" class="project"> 
-    <img src="IMG_7237.jpg" alt="Thermo Electric Converter">
+        <img src="images/IMG_7237.jpg" alt="Thermo Electric Converter">
         <h3>Freshman Projects Class</h3>
         <p>Designed and manufactured a thermo-coupling device using readily avaiable Peltiar modules and heat sinks that produced enough power to charge a phone. I primarily focused on 3D modeling and rapid prototyping to generate accurate renders and prototypes.</p>
         <p><strong>Skills:</strong> CAD , 3D Printing, Testing </p>
       </a>
+    </div>
 
+    <div id="project2" class="fade-section fade-right">
       <a href="project2.html" class="project">
-        <img src="image1.jpg" alt="Racecar Cooling System Optimization">
+        <img src="images/image1.jpg" alt="Racecar Cooling System Optimization">
         <h3>CU Boulder Formula SAE</h3>
         <p>Using an Emerson Micro Motion Flow meter, 3 peers and I optimized the cooling system for a Formula SAE racecar. Using this data we were able to calculate neccesary flow rates and cooling system geometry to extract the most power form the engine.</p>
         <p><strong>Skills:</strong> SolidWorks, Thermal Analysis, Design Optimization</p>
       </a>
+    </div>
 
+    <div id="project3" class="fade-section fade-left">
       <a href="project3.html" class="project">
-        <img src="board_exp" alt="MCEN 1025 - CAD and Fabrication">
+        <img src="images/board_exp" alt="MCEN 1025 - CAD and Fabrication">
         <h3>SolidWorks Final Project</h3>
-        <p>Collaborated on a thermal systems project analyzing cooling efficiency in mechanical assemblies.</p>
+        <p>For my final project for my fabrication class, I designed and modeled a complete skateboard in SolidWorks using hand taken measurements from a physical board. I utilized Solidworks techniques that I learned in class to translate real-world dimensions into an accurate 3D assembly with detailed components and renderings.</p>
         <p><strong>Skills:</strong> MATLAB, Thermodynamics, Data Analysis</p>
       </a>
     </div>
   </section>
 
+<br>
+
   <!-- ---------- CONTACT SECTION ---------- -->
-  <section id="contact">
+  <section id="contact"  class="fade-section fade-up">
     <h2>Contact</h2>
     <ul>
-      <li>Email: <a href="mailto:Samuel.Habib@colorado.edu">Samuel.Habib@colorado.edu</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/samuel-habib2792/" target="_blank">linkedin.com/in/samuel-habib2792</a></li>
-      <li>Phone: <a>(303)-522-2792</a></li>
+      <li>
+        <a href="mailto:Samuel.Habib@colorado.edu">
+          <i class="fa-solid fa-envelope"></i>
+          Samuel.Habib@colorado.edu
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/samuel-habib2792/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+          linkedin.com/in/Samuel-Habib2792
+        </a>
+      </li>
+      <li>
+        <a>
+          <i class="fa-solid fa-phone"></i>
+          (303)-522-2792
+        </a>
+      </li>
     </ul>
   </section>
 
@@ -95,4 +139,8 @@
 
 
 
-</body></html>
+</body>
+
+<script src="script.js"></script>
+
+</html>
