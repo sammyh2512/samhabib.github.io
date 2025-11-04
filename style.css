@@ -1,154 +1,563 @@
 /* ---------- BASE STYLES ---------- */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
-    }
+html {
+  scroll-behavior:smooth; 
+}
 
-    a {
-      text-decoration: none;
-      color: #0077b6;
-    }
 
-    a:hover {
-      color: #023e8a;
-    }
+body {
+  font-family: Monstserrat;
+  background-color: #fffefc;
+  color: #222;
+  line-height: 1.6;
 
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+}
 
-    h1, h2, h3 {
-      margin-bottom: 15px;
-    }
+a {
+  text-decoration: none;
+  color: #0077b6;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 8px;
-      background: #0077b6;
-      color: #fff;
-      transition: 0.3s;
-    }
+a:hover {
+  color: #023e8a;
+}
 
-    .btn:hover {
-      background: #023e8a;
-    }
+section.top-section {
+  width:100%;
+  padding: 0;
+}
 
-    /* ---------- NAVBAR ---------- */
-    header {
-      background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+.top {
+  
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+}
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1000px;
-      margin: auto;
-      padding: 15px 20px;
-    }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-    }
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
 
-    /* ---------- HERO ---------- */
-    #hero {
-      text-align: center;
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #0077b6;
+  color: #fff;
+  transition: 0.3s;
+}
 
-    #hero img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      background: #ddd;
-      margin-bottom: 20px;
-    }
+.btn:hover {
+  background: #023e8a;
+}
 
-    #hero h1 {
-      font-size: 2.2em;
-    }
+/* ---------- NAVBAR ---------- */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 20px;
 
-    #hero p {
-      max-width: 600px;
-      margin: 15px auto 25px;
-      font-size: 1.1em;
-      color: #444;
-    }
+  /* frosted glass effect */
+  background: rgba(128, 128, 128, 0.4); /* grey with transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-    /* ---------- ABOUT ---------- */
-    #about p {
-      margin-bottom: 15px;
-    }
+.logo img {
+  height: 50px;          /* adjust as needed */
+  width: auto;           /* keeps proportions */
+  display: block;
+}
 
-    /* ---------- PROJECTS ---------- */
-    .project-grid {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 3px 20px;
+}
 
-    .project {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
+nav ul {
+  display: flex;
+  font-family: Montserrat;
+  list-style: none;
+  gap: 20px;
+}
 
-    .project:hover {
-      transform: translateY(-5px);
-    }
+nav a {
+  color: #fffefc; /* or a dark color if your background is light */
+  transition: 0.4s;
+  font-weight: bold;
+  
+}
 
-    .project img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
+nav a:hover {
+  color: #0077b6;
+}
 
-    /* ---------- CONTACT ---------- */
-    #contact ul {
-      list-style: none;
-      padding: 0;
-    }
+.top {
+  height: 100vh; /* fill entire screen */
+  width: 100%;
+  /*padding: 0;
+  margin: 0;*/
+  background-image: url('images/back.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* fills screen while keeping proportions */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
 
-    #contact li {
-      margin-bottom: 10px;
-    }
+/*.scroll-indicator {
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
 
-    /* ---------- FOOTER ---------- */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #fff;
-      color: #666;
-      font-size: 0.9em;
-    }
+.scroll-indicator .chevron {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}*/
 
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-      }
-    }
 
+/* Optional overlay for readability */
+.top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+/* Centered name text */
+.split-text-container {
+  display: flex;
+  font-size: 8rem;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fffefc;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; /* ensures it's above overlay */
+  
+}
+
+.description-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 60px; /* pushes list to the right of name */
+  z-index: 1;
+  color: #fffefc;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeInContainer 0.7s ease forwards;
+  animation-delay: 2s; /* wait until name animation finishes */
+}
+
+/* fade-in container so it appears after the name */
+@keyframes fadeInContainer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.desc-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUpDesc 0.6s ease forwards;
+}
+
+.desc-item:nth-child(1) { animation-delay: 2.3s; }
+.desc-item:nth-child(2) { animation-delay: 2.7s; }
+.desc-item:nth-child(3) { animation-delay: 3.1s; }
+
+@keyframes slideUpDesc {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* layout positioning tweak */
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* space between name and description */
+  flex-direction: row; /* name on left, descriptions on right */
+}
+
+
+
+.text-part {
+  display: inline-block;
+  position: relative;
+  transform: translateX(0);
+  animation-duration: 2.25s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.text-part.left {
+  transform: translateX(-200%);
+  animation-name: slide-in-left;
+}
+
+.text-part.right {
+  transform: translateX(200%);
+  animation-name: slide-in-right;
+}
+
+@keyframes slide-in-left {
+  0% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+  0% { transform: translateX(200%); }
+  100% { transform: translateX(0); }
+}
+
+/* ---------- SCROLL INDICATOR CHEVRON ---------- */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 2; /* above overlay */
+}
+
+.scroll-indicator .chevron {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ---------- SCROLL INDICATOR CHEVRON ---------- */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 2; /* above overlay */
+}
+
+.scroll-indicator .chevron {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ---------- SCROLL INDICATOR CHEVRON ---------- */
+#scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 2; /* above overlay */
+}
+
+#scroll-indicator .chevron {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* lift when hovering near it */
+#scroll-indicator:hover .chevron,
+.top:hover #scroll-indicator .chevron {
+  transform: translateY(-15px);
+  opacity: 1;
+}
+
+/* ---------- HERO ---------- */
+#hero {
+  font-family: Montserrat;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ddd;
+  margin-bottom: 20px;
+}
+
+#hero h1 {
+  font-family: Montserrat;
+  font-size: 2.2em;
+}
+
+#hero p {
+  font-family: Montserrat;
+  max-width: 600px;
+  margin: 15px auto 25px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+/* ---------- ABOUT ---------- */
+#about p {
+  font-family: Montserrat;
+  text-align: center;
+  margin-top: 5px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#about h2 {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+
+/* ---------- PROJECTS ---------- */
+/*#project1{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}*/
+
+#projects{
+  font-family: Montserrat;
+}
+
+#projects h2{
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+#project1 {
+  background: #fff;
+  text-align: left;
+  padding: 20px;
+  width:90%;
+  margin-bottom: 60px;
+  /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+  transition: transform 0.2s;
+}
+
+#project1:hover {
+  transform: translateY(-5px);
+}
+
+#project1 img {
+  margin-left: 20px;
+  margin-right: 50px;
+  width: 20%;
+  height: 200px;
+  float: left;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/*#project1{
+  display: box;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}*/
+
+#project2 {
+  background: #fff;
+  text-align: right;
+  padding: 20px;
+  width:90%;
+  margin-bottom: 60px;
+  /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+  transition: transform 0.2s;
+}
+
+#project2:hover {
+  transform: translateY(-5px);
+}
+
+#project2 img {
+  margin-left: 50px;
+  margin-right: 20px;
+  width: 20%;
+  height: 200px;
+  float: right;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/*#project3{
+  display: box;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}*/
+
+#project3 {
+  background: #fff;
+  text-align: left;
+  padding: 20px;
+  width:90%;
+  margin-bottom: 60px;
+  /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+  transition: transform 0.2s;
+}
+
+#project3:hover {
+  transform: translateY(-5px);
+}
+
+#project3 img {
+  margin-left: 20px;
+  margin-right: 50px;
+  width: 20%;
+  height: 200px;
+  float: left;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* ---------- CONTACT ---------- */
+#contact {
+  font-family: Montserrat;
+}
+
+#contact h2 {
+  clear: both;
+  font-family: Montserrat;
+  font-size: 100px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#contact ul {
+  text-align: center;
+  list-style: none;
+  padding: 20px;
+}
+
+#contact li {
+  margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/*
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}*/
+
+/* ---------- SCROLL FADE-IN ANIMATIONS ---------- */
+.fade-section {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Default fade up */
+.fade-up {
+  transform: translateY(50px);
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade from left */
+.fade-left {
+  transform: translateX(-80px);
+
+}
+.fade-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade from right */
+.fade-right {
+  transform: translateX(80px);
+}
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
