@@ -1,0 +1,167 @@
+body {
+  font-family: Montserrat;
+  background: #fffefc;
+  color: #222;
+  padding-top: 100px;
+}
+
+.nav-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 83px; /* height of fogged navbar area */
+  background-image: url("images/back.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  
+}
+
+
+/* NAVBAR match */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 20px;
+
+  /* frosted glass effect */
+  background: rgba(128, 128, 128, 0.4); /* grey with transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 50px;          /* adjust as needed */
+  width: auto;           /* keeps proportions */
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 3px 20px;
+}
+
+nav ul {
+  display: flex;
+  font-family: Montserrat;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: #fffefc; /* or a dark color if your background is light */
+  transition: 0.4s;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+nav a:hover {
+  color: #0077b6;
+}
+
+.hero-project {
+  text-align: center;
+  margin-top: 120px;
+  padding-bottom: 40px;
+}
+
+.hero-project h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.hero-project p {
+  max-width: 600px;
+  margin: 15px auto;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.project-block {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: 120px auto;
+  gap: 60px;
+}
+
+.project-block img {
+  width: 50%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.project-block img:hover {
+  transform: scale(1.03);
+}
+
+.project-block:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.text-box h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.text-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.back-link {
+  display: block;
+  width: fit-content;
+  margin: 80px auto 120px;
+  font-size: 1.1rem;
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: #023e8a;
+}
+
+/* fade animations */
+.fade-section {
+  opacity: 0;
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-left {
+  transform: translateX(-60px);
+}
+.fade-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-right {
+  transform: translateX(60px);
+}
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-up {
+  transform: translateY(50px);
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
