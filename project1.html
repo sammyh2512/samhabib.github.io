@@ -3,52 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 1 | Sam Habib Portfolio</title>
+  <title>Project 1 | Freshman Projects Class</title>
+  <link rel="icon" type="image/png" href="images/favicon2.png">
   <link rel="stylesheet" href="project1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<div class="nav-bg"></div>
 
-  <header>
-    <h1>Project 1 — Racecar Flow Meter</h1>
-    <p>Design, fabrication, and testing of a custom flow measurement system for a university racecar project.</p>
-  </header>
-
-  <section class="gallery">
-    <div class="gallery-item">
-      <img src="images/project1-1.jpg" alt="Project 1 image 1">
-      <div class="info">
-        <h3>Concept and Design</h3>
-        <p>Initial CAD design of the flow meter housing, focusing on aerodynamic integration and weight reduction.</p>
-      </div>
+<header>
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/favicon2.png" alt="Logo">
+      </a>
     </div>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <div class="gallery-item">
-      <img src="images/project1-2.jpg" alt="Project 1 image 2">
-      <div class="info">
-        <h3>Prototype Assembly</h3>
-        <p>Machined aluminum body and sensor integration for initial testing phase.</p>
-      </div>
-    </div>
+<section class="hero-project fade-up">
+  <h1>Freshman Projects Class</h1>
+  <p>Design, fabrication, and testing of a custom thermoelectric converter for CU freshamn projects.</p>
+</section>
 
-    <div class="gallery-item">
-      <img src="images/project1-3.jpg" alt="Project 1 image 3">
-      <div class="info">
-        <h3>Testing and Data Collection</h3>
-        <p>Bench testing with water to calibrate sensor output and confirm linear response.</p>
-      </div>
-    </div>
 
-    <div class="gallery-item">
-      <img src="images/project1-4.jpg" alt="Project 1 image 4">
-      <div class="info">
-        <h3>Final Implementation</h3>
-        <p>Installed and validated on the racecar, improving real-time telemetry accuracy by 12%.</p>
-      </div>
-    </div>
-  </section>
+<!-- ---------- GALLERY SECTIONS ---------- -->
+<section class="project-block fade-left">
+  <img src="images/Screenshot 2025-03-05 125330.png" alt="CAD Concept">
+  <div class="text-box">
+    <h2>Prototype Creation</h2>
+    <p>Initial CAD modeling focused on a compact design and assembly to optimize heat transfer while in a protoype stage.</p>
+  </div>
+</section>
 
-  <a href="index.html" class="back-link">← Back to Portfolio</a>
+<section class="project-block fade-right">
+  <img src="images/Screenshot 2025-04-30 130917.png" alt="Prototype">
+  <div class="text-box">
+    <h2>Concept & CAD Development</h2>
+    <p>I worked as the head of CAD and rapid prototyping, using SolidWorks to generate models and drawings alongside 3D printers to construct prototype housing.</p>
+  </div>
+</section>
 
+<section class="project-block fade-left">
+  <img src="images/testing.jpg" alt="Testing">
+  <div class="text-box">
+    <h2>Testing & Calibration</h2>
+    <p>Bench testing using water to confirm voltage outputs and component lifespan. The shown experiments generated enough electricity to charge an iPhone.</p>
+  </div>
+</section>
+
+<section class="project-block fade-right">
+  <img src="images/IMG_7237.jpg" alt="Final">
+  <div class="text-box">
+    <h2>Final Presentation</h2>
+    <p>Alongside my group of 5, I presented to a panel of judges about our design, development, and final product. We won Best in our Section and second overall at a similar events two weeks prior.</p>
+  </div>
+</section>
+
+<a href="index.html" class="back-link">← Back to Portfolio</a>
+
+<script src="script.js"></script>
 </body>
 </html>
