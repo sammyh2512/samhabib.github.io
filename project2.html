@@ -1,81 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Racecar Flow Meter System | Sam Habib</title>
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      margin: 0;
-      line-height: 1.6;
-    }
-    header {
-      background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 15px 20px;
-      position: sticky;
-      top: 0;
-    }
-    header a {
-      text-decoration: none;
-      color: #0077b6;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    p {
-      margin-bottom: 15px;
-    }
-    .photo-grid {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      margin-top: 30px;
-    }
-    .photo-grid img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
-    .back {
-      display: inline-block;
-      margin-top: 20px;
-      color: #0077b6;
-      font-weight: 500;
-    }
-    .back:hover {
-      color: #023e8a;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2 | CU Boulder Formula SAE</title>
+  <link rel="icon" type="image/png" href="images/favicon2.png">
+  <link rel="stylesheet" href="project2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  
+<div class="nav-bg"></div>
 
-  <header>
-    <a href="index.html">← Back to Portfolio</a>
-  </header>
-
-  <section>
-    <h1>Racecar Flow Meter System</h1>
-    <p>This project involved designing and implementing a flow meter to measure fuel efficiency and monitor performance data during races. I worked on the mechanical integration of sensors and developed a data acquisition system to provide real-time telemetry to the driver.</p>
-    <p><strong>Skills used:</strong> CAD, Sensors, Data Acquisition, SolidWorks, MATLAB</p>
-
-    <div class="photo-grid">
-      <img src="images/project2-photo1.jpg" alt="Flow meter prototype">
-      <img src="images/project2-photo2.jpg" alt="Flow data dashboard">
-      <img src="images/project2-photo3.jpg" alt="System installed in racecar">
+<header>
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/favicon2.png" alt="Logo">
+      </a>
     </div>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <a class="back" href="index.html">← Back to Portfolio</a>
-  </section>
+<section class="hero-project fade-up">
+  <h1>CU Boulder Formula SAE</h1>
+  <p>Design, fabrication, and testing of a custom flow measurement system for a university Formula SAE racecar.</p>
+</section>
 
+
+<!-- ---------- GALLERY SECTIONS ---------- -->
+<section class="project-block fade-left">
+  <img src="images/20241112_025129956_iOS.png" alt="CAD Concept">
+  <div class="text-box">
+    <h2>Concept & CAD Development</h2>
+    <p>Initial CAD modeling focused on compact aerodynamic packaging and mass-optimized geometry to integrate efficiently into the cooling loop subsystem.</p>
+  </div>
+</section>
+
+<section class="project-block fade-right">
+  <img src="images/20241112_025056326_iOS.png" alt="Prototype">
+  <div class="text-box">
+    <h2>Prototype Fabrication</h2>
+    <p>Machined aluminum housing and sensor wiring assembly, enabling preliminary functional testing of the sensor with controlled flow rates.</p>
+  </div>
+</section>
+
+<section class="project-block fade-left">
+  <img src="images/20240928_191057136_iOS.png" alt="Testing">
+  <div class="text-box">
+    <h2>Testing & Calibration</h2>
+    <p>Bench calibration using water to confirm accurate data response and ensure linear sensor behavior throughout expected operating ranges.</p>
+  </div>
+</section>
+
+
+<a href="index.html" class="back-link">← Back to Portfolio</a>
+
+<script src="script.js"></script>
 </body>
 </html>
