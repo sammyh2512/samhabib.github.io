@@ -496,9 +496,21 @@ nav a:hover::after {
   right: 0;
 }
 
+.project-text {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#project2 .project-text {
+  grid-column: 1;
+  align-items: flex-end;
+}
+
 .project img {
   grid-column: 1;
-  grid-row: 1 / -1;
+  grid-row: 1;
   width: 100%;
   height: 260px;
   border-radius: 6px 60px 6px 6px;
@@ -698,6 +710,13 @@ footer {
     max-width: 100%;
     height: 220px;
     border-radius: 6px 40px 6px 6px;
+  }
+
+.project-text,
+  #project2 .project-text {
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
   }
 
 .project h3,
